@@ -10,9 +10,10 @@ html:root{
 
 body{
     margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container-fluid{
-
+width: 100%;
 }
 .container{
     max-width: 960px;
@@ -29,6 +30,9 @@ body{
 .col{
     margin: 0;
     padding: 15px;
+}
+.w-25{
+    width: 25%;
 }
 /* systme flexbox */
 
@@ -105,6 +109,71 @@ ul > li{
 ul > li.active{
     border:2px solid var(--green);
 }
-header{
+
+
+/* partie 3 avec form */
+.contact{
+    background-color: #303030;
+    color: var(--grey-light);
+}
+.contact h2{
+  
+    padding-bottom: 15px;
+    font-family: Georgia;
+    font-size: 1rem;
  
+}
+.f-weight-100{
+    font-weight:100 ;
+}
+.puce-style{
+    list-style: url('../media/puce-list.png');
+    
+}
+.puce-style li{
+    text-align: left;
+    font-size: 0.8rem; ;
+}
+
+
+.border-b{
+    border-bottom: 1px solid var(--grey-medium);
+}
+.btn-green{
+   
+    background: var(--green);
+    border: none;
+    border-radius: 10px;
+    color:#303030;
+    width: 70px;
+    height: 35px;
+}
+.contact input, .contact textarea{
+    background-color: #222222;
+    color:var(--grey-light);
+    border:none;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom:10px ;
+}
+.contact input{
+    height: 35px;
+}
+.contact textarea{
+    height: 80px;
+}
+.contact p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+.f-size-0-6{
+    font-size:0.6rem;
+}
+
+/* footer */
+
+footer{
+    background-color: #2b2b2b;
+    color:var(--white);
+    font-size: 0.7rem;
 }
