@@ -17,6 +17,7 @@ body{
 
 .container-fluid{
 width: 100%;
+
 }
 .container{
     max-width: 960px;
@@ -27,7 +28,7 @@ width: 100%;
 
 .container{
     max-width: 960px;
-    width:80% ;
+    width:90% ;
     margin: 0 auto;
     padding: 50px;
  }
@@ -67,6 +68,16 @@ width: 100%;
      border: 3px solid var(--green); 
  }
 
+ .zoom img:hover {
+    width:296px;
+    height:218px;
+    }
+
+.zoom:hover .plorem{
+    display:none;
+}
+
+
  .border{
     border: 3px solid white;
 }
@@ -86,8 +97,8 @@ width: 100%;
     background:var(--grey-dark) ;
     color: var(--white);
     font-size: 1.6em;
-    padding: 5px;
-    margin-top: 1px;
+    padding: 2px;
+    margin-top: 6px;
     border-radius: var(--grey-dark);
     border-radius: 5px;
 }
@@ -128,6 +139,7 @@ border:1.5px solid var(--grey-dark);
     margin: 0;
 }
 .service{
+    width:100%;
     background:#660000;
     align-items: stretch;
 }
@@ -149,6 +161,7 @@ border:1.5px solid var(--grey-dark);
 .w-25{
     width: 25%;
 }
+
 
 /* systme flexbox */
 
