@@ -194,6 +194,12 @@ border:1.5px solid var(--grey-dark);
 .f-wrap{
    flex-wrap:wrap;
 }
+.align-self-center{
+    align-self: center;
+}
+.justify-self{
+    justify-self: flex-start;
+}
 
 /* systeme margin et padding */
 .m-0{
@@ -321,4 +327,13 @@ footer{
 .zoom:hover .plorem{
     display:none;
 }
-
+.position-absolute{
+    position: absolute;
+    left: 0;
+}
+.visible-none{
+    visibility: hidden;
+}
+.ov-hidden{
+    overflow: hidden;
+}
