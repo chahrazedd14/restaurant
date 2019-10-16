@@ -194,15 +194,12 @@ border:1.5px solid var(--grey-dark);
 .f-wrap{
    flex-wrap:wrap;
 }
-<<<<<<< HEAD
-=======
 .align-self-center{
     align-self: center;
 }
 .justify-self{
     justify-self: flex-start;
 }
->>>>>>> c32d33f44b1fd22184592421e8bbcd8cdc010c21
 
 /* systeme margin et padding */
 .m-0{
@@ -330,9 +327,6 @@ footer{
 .zoom:hover .plorem{
     display:none;
 }
-<<<<<<< HEAD
-
-=======
 .position-absolute{
     position: absolute;
     left: 0;
@@ -343,4 +337,3 @@ footer{
 .ov-hidden{
     overflow: hidden;
 }
->>>>>>> c32d33f44b1fd22184592421e8bbcd8cdc010c21
