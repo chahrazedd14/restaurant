@@ -64,6 +64,9 @@ body{
 .align-self-center{
     align-self: center;
 }
+.justify-self{
+    justify-self: flex-start;
+}
 
 /* systeme margin et padding */
 .m-0{
@@ -194,5 +197,15 @@ h1{
     font-weight:lighter;
 }
 .masquer{
+    overflow: hidden;
+}
+.position-absolute{
+    position: absolute;
+    left: 0;
+}
+.visible-none{
+    visibility: hidden;
+}
+.ov-hidden{
     overflow: hidden;
 }
