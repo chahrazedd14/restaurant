@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -34,30 +35,92 @@
         </div>
         <!-- carroussel-->
         <div class="row  ">
-            <div class="container d-flex f-justify-content-between   ">
+            <div class="container  f-justify-content-between d-flex ">
+
+                <p class="prev" onclick="plusSlides(-1)">&#10094;</p>
+                <!-- 1st slides-->
+                <div class="   mySlides ">
+                   <div class="d-flex">
+                        <div class="col  align-self-center  ">
+
+                            <h2 class="f-size-60 f-weight-light m-bottom-10">Cursus penati
+                                saccum nulla.</h2>
+
+                            <p class="text-color-grey-light text-width m-bottom-30">Nullamlacus dui ipsum conseque
+                                loborttis non
+                                euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue
+                                magnis
+                                vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                            <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
+                            </p>
+                        </div>
+                        <div class="col" id="image">
+                            <p><img src="media/resto-02.jpg" class="b-radius cuisine "></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd slides-->
+                <div class="   mySlides ">
 
 
-                <div class="  d-flex f-justify-content-between " >
+                    <div class="d-flex">
 
-                    <div class="col align-self-center ">
-                        <h2 class="f-size-60 f-weight-light m-bottom-10 text-width">Cursus penati
-                            saccum nulla.</h2>
+                        <div class="col  align-self-center  ">
 
-                        <p class="text-color-grey-light text-width m-bottom-30">Nullamlacus dui ipsum conseque loborttis
-                            non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue
-                            magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
-                        <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a></p>
+                            <h2 class="f-size-60 f-weight-light m-bottom-10">cxvcnbvn.</h2>
 
+                            <p class="text-color-grey-light text-width m-bottom-30">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Laboriosam, non. Optio aliquam earum soluta voluptatum
+                                harum quod ratione corrupti, ea nulla cum repellendus in nisi fuga magnam, suscipit
+                                fugiat? Voluptatibus.</p>
+                            <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
+                            </p>
+                        </div>
+
+                        <div class="col" id="image">
+                            <p><img src="media/resto-01.jpg" class="b-radius cuisine "></p>
+                        </div>
 
                     </div>
-                    <div class="col">
-                         <p><img src="medias/cuisine.jfif" class="b-radius cuisine "></p> 
-                    </div>
-
-
 
                 </div>
-         
+<!--3em slide-->
+<div class="   mySlides ">
+
+
+        <div class="d-flex">
+
+            <div class="col  align-self-center  ">
+
+                <h2 class="f-size-60 f-weight-light m-bottom-10">fdgdf fdg  dfg.</h2>
+
+                <p class="text-color-grey-light text-width m-bottom-30">Lorem ipsum dolor sit amet
+                    consfgdfgfgdf ne corrupti, ea nulla cufdgf s infdgdf fg nisi fuga dfg gnam, suscipit
+                    fugiat? Voluptfg fd fdg fdg dfgatibus.</p>
+                <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
+                </p>
+            </div>
+
+            <div class="col" id="image">
+                <p><img src="media/rest0-03.jpg" class="b-radius cuisine "></p>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- -->
+               <p  class="next"  onclick="plusSlides(1)">&#10095;</p> 
+
+              
+
+
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </header>
@@ -261,6 +324,42 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </body>
 
 </html>
