@@ -7,7 +7,6 @@ html:root{
     
     }
 
-
 body{
     margin:0px;
     
@@ -106,7 +105,7 @@ color: var(--grey-medium);
     text-transform: capitalize;
 }
 .text-width{
-    width: 387px;
+    width: 347px;
 }
 .f-size-14{
     font-size: 14px;
