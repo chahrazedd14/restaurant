@@ -260,11 +260,15 @@
                 </div>
                 <div class="col w-25">
                     <h2 class="f-weight-100 text-color-white">Contact Us</h2>
-                    <form action='' method="POST">
-                        <input type="text" placeholder="Full Name" id='name' name="f-name">
-                        <input type="email" placeholder="Email Adress" id="email" name="f-addr">
-                        <input type="text" placeholder="Subject" id="subject" name="f-subject">
-                        <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10"></textarea>
+                    <form action='traitement.php' id="form1" novalidate method="POST">
+                        <input type="text" placeholder="Full Name" id='name' maxlength='20' required >
+                        <span id='missname'></span></br>
+                        <input type="email" placeholder="Email Adress" id="email" name="f-addr" required>
+                        <span id ='missemail'></span><br/>
+                        <input type="text" placeholder="Subject" id="subject" name="f-subject" required>
+                        <span id='misssubject'></span><br/>
+                        <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10" required></textarea>
+                        <span id='missmessage'></span><br/>
                         <button class='btn-green'>SUBMIT</button>
                     </form>
                 </div>
@@ -284,6 +288,8 @@
             </div>
         </div>
     </footer>
+    <script src="carrousel.js"></script>
+    <script src="formulaire.js"></script>
 </body>
 
 </html>
