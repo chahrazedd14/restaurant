@@ -405,7 +405,7 @@ h1{
 
 
     /* slide */
-    
+
      /* Slideshow container */
      .slideshow-container {
         max-width: 960px;
@@ -429,7 +429,7 @@ h1{
         margin: auto;
 
         padding: 16px;
-        color: green;
+        color:var(--green);
         font-weight: bold;
         font-size: 35px;
         transition: 0.6s ease;
@@ -446,7 +446,7 @@ h1{
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
-        background-color: gray;
+        background-color: var(--grey-light);
         line-height: 20px;
     }
 
@@ -458,7 +458,7 @@ h1{
         height: 15px;
         width: 15px;
         margin: 0 2px;
-        background-color: gray;
+        background-color:var(--grey-medium);
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -466,7 +466,7 @@ h1{
 
     .active,
     .dot:hover {
-        background-color: green;
+        background-color: var(--green);
     }
 
     /* Fading animation */
