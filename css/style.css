@@ -19,18 +19,13 @@ body{
 width: 100%;
 
 }
-.container{
-    max-width: 960px;
-    width:90% ;
-    margin:0px;    
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 .container{
     max-width: 960px;
     width:80% ;
     margin: 0 auto;
-    padding: 50px;
+
  }
  
  .green{
@@ -212,6 +207,10 @@ border:1.5px solid var(--grey-dark);
 .p-1{
 padding:0.5rem;
 }
+.p-top-bot{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 .p-0{
     padding: 0;
 }
@@ -351,7 +350,7 @@ header{
     filter: rgba(0,0,0,0.8);
 }
 .header-height{
-    height: 599px;
+    min-height: 599px;
 }
 a{
     color: white;
@@ -395,13 +394,11 @@ h1{
 .zoom:hover .plorem{
     display:none;
 }
-.position-absolute{
-    position: absolute;
-    left: 0;
-}
-.visible-none{
-    visibility: hidden;
-}
-.ov-hidden{
-    overflow: hidden;
-}
+
+
+.cuisine{
+    border-radius:60%;
+    width: 380px;
+    height: 380px;
+    border:30px solid #6B6B6B;
+    }
