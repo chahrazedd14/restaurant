@@ -29,7 +29,7 @@ function validation (event){
     }
     if(message.validity.valueMissing ){
         missmessage.textContent='error',
-        missmessage.style.color='red';
+        missmessage.style.color='yellow';
     
     }else if (message.validity.valid ==false){
             event.preventDefault();
@@ -43,7 +43,7 @@ function validation (event){
     }
     if(email.validity.valueMissing ){
         missemail.textContent='error',
-        missemail.style.color='red';
+        missemail.style.color='blue';
     
     }else if (email.test(email.value) ==false){
             event.preventDefault();
@@ -55,6 +55,21 @@ function validation (event){
     }else{
 
     }
+    if(subject.validity.valueMissing ){
+        misssubject.textContent='error',
+        misssubject.style.color='green';
+    
+    }else if (subject.test(subject.value) ==false){
+            event.preventDefault();
+            misseamil.textcontent='incorrect';
+            misssubject.style.color='orange';
+
+
+        
+    }else{
+
+    }
+
 
 }
 /********************************************kkkk******** */

@@ -137,6 +137,7 @@ border:1.5px solid var(--grey-dark);
     width:100%;
     background:#660000;
     align-items: stretch;
+    padding: 2% 0;
 }
 .service-text-1{
     text-align: center;
