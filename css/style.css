@@ -536,3 +536,15 @@ h1{
         animation-name: fade;
         animation-duration: 1.5s;
     }
+
+
+
+
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .contact > .col:first-child {  
+            display: none;
+        }
+
+
+
+     }
