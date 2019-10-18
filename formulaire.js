@@ -8,6 +8,7 @@ var missemail=document.getElementById('missemail');
 var missmessage=document.getElementById('missmessage');
 var misssubject=document.getElementById('misssubject')
 var prenomvalid=  /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/; 
+var regexEmail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
 
 formvalid.addEventListener('submit',validation);
 
@@ -42,12 +43,12 @@ function validation (event){
 
     }
     if(email.validity.valueMissing ){
-        missemail.textContent='error',
+        missemail.textContent='please provide a valid email adress',
         missemail.style.color='blue';
     
-    }else if (email.test(email.value) ==false){
+    }else if (regex.test(name.value) ==false){
             event.preventDefault();
-            misseamil.textcontent='incorrect';
+            misseamil.textcontent='';
             missemail.style.color='orange';
 
 
@@ -61,7 +62,7 @@ function validation (event){
     
     }else if (subject.test(subject.value) ==false){
             event.preventDefault();
-            misseamil.textcontent='incorrect';
+            misssubject.textcontent='incorrect';
             misssubject.style.color='orange';
 
 

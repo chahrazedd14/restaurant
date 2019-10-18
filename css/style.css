@@ -249,9 +249,6 @@ ul > li{
     padding: 8px;
     box-sizing: border-box;
 }
-ul > li.active{
-    border:2px solid var(--green);
-}
 
 
 /* partie 3 avec form */
@@ -468,6 +465,7 @@ h1{
     .active,
     .dot:hover {
         background-color: var(--green);
+        border-radius: 13px;
     }
 
     /* Fading animation */
