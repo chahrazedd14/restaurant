@@ -134,7 +134,7 @@ border:1.5px solid var(--grey-dark);
 }
 
 .box-photo-bg2{
-    background-image:url("../media/bar.jpg");  
+    background-image:url("../media/balcool.jpg");  
 }
 
 .box-photo-bg3{
@@ -202,6 +202,7 @@ border:1.5px solid var(--grey-dark);
     width:100%;
     background:#660000;
     align-items: stretch;
+    padding: 2% 0;
 }
 .service-text-1{
     text-align: center;
@@ -240,6 +241,7 @@ border:1.5px solid var(--grey-dark);
 .f-justify-content-around {
     justify-content: space-around;
 }
+
 
   .f-align-items-center{
     align-items: center;
@@ -313,9 +315,6 @@ ul > li{
     text-align:center;
     padding: 8px;
     box-sizing: border-box;
-}
-ul > li.active{
-    border:2px solid var(--green);
 }
 
 
@@ -466,13 +465,81 @@ h1{
     border-radius:60%;
     width: 380px;
     height: 380px;
-    border:30px solid #6B6B6B;
+    border:25px solid #6B6B6B;
     }
-    .media
-    @media (min-width: 576px) and (max-width: 767.98px){
 
+
+    /* slide */
+
+     /* Slideshow container */
+     .slideshow-container {
+        max-width: 960px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+        
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
         
 
 
+        margin: auto;
 
+        padding: 16px;
+        color:var(--green);
+        font-weight: bold;
+        font-size: 35px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: var(--grey-light);
+        line-height: 20px;
+    }
+
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color:var(--grey-medium);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: var(--green);
+        border-radius: 13px;
+    }
+    
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
     }
