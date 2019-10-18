@@ -120,9 +120,34 @@
                 </div>
             </div>
         </div>
+            <div class="row">
+            <div class="container ">
+            <div class=" d-flex f-wrap f-justify-content-between">
+
+                    <div class="box-photo-bg1 portfolio-box-photo">
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="box-photo-bg2 portfolio-box-photo"> 
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="box-photo-bg3 portfolio-box-photo">
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="box-photo-bg4 portfolio-box-photo">
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="box-photo-bg5 portfolio-box-photo">
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="box-photo-bg6 portfolio-box-photo">
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="container d-flex f-wrap">
 
                 <div class="col-1 d-flex ">
@@ -130,56 +155,8 @@
                         <p class="m-0 h"><img class="media-2 service-text" src="media/bar.jpg" alt="bar" height=1396
                                 widht=1920 /></p>
                         <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                </div>
-                <div class="col-1 d-flex ">
-                    <div class=" border pointer zoom">
-                        <p class="m-0 h"><img class="media-2 service-text " src="media/drink.jpg" alt="drink"
-                                height=1360 widht=1920 /></p>
-                        <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                </div>
-                <div class="col-1 d-flex ">
-                    <div class=" border pointer zoom">
-                        <p class="m-0 h"><img class="media-2 service-text " src="media/fourchette.jpg" alt="fourchette"
-                                height=1360 /></p>
-                        <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-1 d-flex ">
-                    <div class=" border pointer zoom">
-                        <p class="m-0 h"><img class="media-2" src="media/dej.jpg" alt="dej" height=1396 width=1920 />
-                        </p>
-                        <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                </div>
-                <div class="col-1 d-flex ">
-                    <div class="border pointer zoom">
-                        <p class="m-0 h"><img class="media-2 sevice-text" src="media/croissant.jpg" alt="croissant"
-                                height=1360 widht=1920 /></p>
-                        <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-
-
-                    </div>
-                </div>
-                <div class="col-1 d-flex ">
-                    <div class="border pointer zoom">
-                        <p class="m-0 h"><img class="media-2 sevice-text" src="media/be.jpg" alt="be" height=1360
-                                widht=1920 /></p>
-                        <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
+                    </div> -->
+                
     <!--  3eme partie  -->
     <div class="contact container-fluid">
         <div class="row">
@@ -238,7 +215,6 @@
                     <h2 class="f-weight-100 text-color-white">Contact Us</h2>
                     <form action='' method="POST">
                         <input type="text" placeholder="Full Name" id='name' name="f-name">
-                        <span id="prenom_manquant"></span>
                         <input type="email" placeholder="Email Adress" id="email" name="f-addr">
                         <input type="text" placeholder="Subject" id="subject" name="f-subject">
                         <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10"></textarea>
@@ -248,21 +224,6 @@
             </div>
         </div>
     </div>
-    <script>
-            var validation = document.getElementById("bouton_envoi");
-            var name = document.getElementById("prenom");
-            var name_m = document.getElementById("prenom_manquant");
-            validation.addEventListener("click",f_valid);
-
-            function f_valid(e){
-            if (name.validity.valueMissing){
-              e.preventDefault();
-              name_m.textContent = "Prénom manquant";
-              name_m.style.color = "red";
-
-             }
-            }
-          </script>
     <!--footer-->
     <footer class="container-fluid">
         <div class="row">
