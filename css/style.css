@@ -130,27 +130,27 @@ border:1.5px solid var(--grey-dark);
 }
 
 .box-photo-bg1{
-    background-image:url('../media/croissant.jpg');
+    background-image:url("../media/chef.jpg");
 }
 
 .box-photo-bg2{
-    background-image:url("../media/bar.jpg");  
+    background-image:url("../media/table.jpg");  
 }
 
 .box-photo-bg3{
-    background-image:url("../media/drink.jpg");  
+    background-image:url("../media/dri.jpg");  
 }
 
 .box-photo-bg4{
-    background-image:url("../media/fourchette.jpg"); 
+    background-image:url("../media/dej.jpg"); 
 }
 
 .box-photo-bg5{
-    background-image:url("../media/dej.jpg");
+    background-image:url("../media/croissant.jpg");
 }
 
 .box-photo-bg6{
-    background-image:url("../media/be.jpg");
+    background-image:url("../media/macaron.jpg");
 }
 .box-photo-bg1::hove{
     background-color: var(--green);
