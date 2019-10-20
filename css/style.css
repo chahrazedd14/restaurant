@@ -130,27 +130,27 @@ border:1.5px solid var(--grey-dark);
 }
 
 .box-photo-bg1{
-    background-image:url('../media/croissant.jpg');
+    background-image:url("../media/chef.jpg");
 }
 
 .box-photo-bg2{
-    background-image:url("../media/bar.jpg");  
+    background-image:url("../media/table.jpg");  
 }
 
 .box-photo-bg3{
-    background-image:url("../media/drink.jpg");  
+    background-image:url("../media/dri.jpg");  
 }
 
 .box-photo-bg4{
-    background-image:url("../media/fourchette.jpg"); 
+    background-image:url("../media/dej.jpg"); 
 }
 
 .box-photo-bg5{
-    background-image:url("../media/dej.jpg");
+    background-image:url("../media/croissant.jpg");
 }
 
 .box-photo-bg6{
-    background-image:url("../media/be.jpg");
+    background-image:url("../media/macaron.jpg");
 }
 .box-photo-bg1::hove{
     background-color: var(--green);
@@ -158,7 +158,12 @@ border:1.5px solid var(--grey-dark);
 
 .portfolio-box-photo:hover{
     border: 5px solid var(--green); 
+
 }
+.portfolio-box-photo:hover >p{
+    display: none;
+}
+
 .portfolio-box-photo{
     width: 290px;
     height: 190px;
@@ -211,6 +216,7 @@ border:1.5px solid var(--grey-dark);
     background-size:cover;
     margin-top: 163px;
 }
+
 
 .col{
     margin: 0;
@@ -528,6 +534,7 @@ h1{
         background-color: var(--green);
         border-radius: 13px;
     }
+    
 
     /* Fading animation */
     .fade {
@@ -536,6 +543,7 @@ h1{
         animation-name: fade;
         animation-duration: 1.5s;
     }
+<<<<<<< HEAD
 
 
 
@@ -548,3 +556,5 @@ h1{
 
 
      }
+=======
+>>>>>>> 37ce234cf23a8715594452f9f057d707d3c24ab1
