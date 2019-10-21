@@ -449,9 +449,9 @@ h1{
 /* ######carousell#### */
 .bouton-bordure{
     border: 1px solid var(--green);
-    width: 170px;
+    width: 150px;
     background-color: var(--green);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 13px;
     text-align:center ;
     height: 30px;
     display: table-cell;
@@ -557,20 +557,6 @@ h1{
         animation-duration: 1.5s;
     }
 
-<<<<<<< HEAD
-
-
-
-    @media (min-width: 768px) and (max-width: 991.98px) { 
-        .contact > .col:first-child {  
-            display: none;
-        }
-
-
-
-    }
-=======
->>>>>>> b6b5af6101e4b36f81d8ba3970195008cb382566
    
     /* border:30px solid #6B6B6B;
     } */
