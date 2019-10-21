@@ -625,50 +625,71 @@ h1 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
-
-
-
+.erreur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+    padding:20px;
+    color:red;
+}
+.cuisine {
+   width: 200px;
+   height: 180px;
+}
 
 
 /* border:30px solid #6B6B6B;
     } */
-@media (min-width:992px) and (max-width:1200px) {
-
-    .container {
-        width: 100%;
-    }
-
-    .col-footer {
-        font-size: 25px;
-    }
-
-    .latest-work-p {
-
-        font-size: 20px;
-    }
-
-    .text-footer {
-        font-size: 20px;
-    }
-
-
-    .li-footer-links {
-        font-size: 21px;
-    }
-
-    .p-service {
-        font-size: 16px;
-    }
-
-    .size-16 {
-        font-size: 20px;
-    }
-
-}
 
 
 /**************************/
+
+@media (min-width:992px) and (max-width:1200px) { 
+    
+    .container{
+        width: 100%;
+        }
+    
+    .col-footer{
+        font-size: 25px;
+    }
+    .latest-work-p{
+    
+        font-size: 20px;
+    }
+    .text-footer{
+        font-size: 20px;
+    }
+    
+    
+    .li-footer-links{
+        font-size: 21px;
+    }
+    
+    .p-service{
+        font-size: 16px;
+    }
+    
+    .size-16{
+        font-size: 20px;
+    }
+    
+    }
+
+.service h3{
+    font-size: 1.3rem;
+}
+
+.w-33, .w-25{
+    width: 33%;
+}
+.header-height{
+    min-height: 520px;
+}
+}
+
+
+/**********************fin media 1200***************************/
+/************************debut media eric**************************/
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* contact */
     
@@ -772,51 +793,8 @@ width: 100%;
    
     /* border:30px solid #6B6B6B;
     } */
-    @media (min-width:992px) and (max-width:1200px) { 
-    
-        .container{
-            width: 100%;
-            }
-        
-        .col-footer{
-            font-size: 25px;
-        }
-        .latest-work-p{
-        
-            font-size: 20px;
-        }
-        .text-footer{
-            font-size: 20px;
-        }
-        
-        
-        .li-footer-links{
-            font-size: 21px;
-        }
-        
-        .p-service{
-            font-size: 16px;
-        }
-        
-        .size-16{
-            font-size: 20px;
-        }
-        
-        }
-
-    .service h3{
-        font-size: 1.3rem;
-    }
- 
-    .w-33, .w-25{
-        width: 33%;
-    }
-    .header-height{
-        min-height: 520px;
-    }
-}
-
-
+   /***********fin media 992******/
+   /**************debut media anthony******************/
     @media (max-width: 577px) { 
         .menu-burger{
             display: flex;
@@ -887,16 +865,3 @@ width: 100%;
 
 
 
-
-
-     .erreur{
-         font-family: Arial, Helvetica, sans-serif;
-         font-size:10px;
-         padding:20px;
-         color:red;
-     }
-    .cuisine {
-        width: 200px;
-        height: 180px;
-    }
-}
