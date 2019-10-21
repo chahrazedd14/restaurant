@@ -125,7 +125,8 @@ hr {
     height: 0px;
     margin-bottom: 0;
     padding: auto;
-    border: 1.5px solid var(--grey-dark);
+    border:1.5px solid var(--grey-dark);
+    background: var(--grey-dark);
 }
 
 .col-1 {
@@ -213,10 +214,9 @@ hr {
     width: 100%;
     margin: 0;
 }
+.service{
 
-.service {
-    /* width: 100%; */
-    background: #660000;
+    background:#660000;
     align-items: stretch;
     padding: 2% 0;
 }
@@ -418,14 +418,14 @@ ul>li.active {
     border: none;
     border-radius: 5px;
     width: 90%;
-    margin-bottom: 10px;
+    margin-top:0;
 }
-
-.contact input {
+.contact input{
+    margin: 0;
     height: 35px;
 }
-
-.contact textarea {
+.contact textarea{
+    margin: 0;
     height: 80px;
 }
 
@@ -513,10 +513,10 @@ h1 {
 /* ######carousell#### */
 .bouton-bordure {
     border: 1px solid var(--green);
-    width: 170px;
+    width: 150px;
     background-color: var(--green);
-    border-radius: 15px 15px 15px 15px;
-    text-align: center;
+    border-radius: 13px;
+    text-align:center ;
     height: 30px;
     display: table-cell;
     vertical-align: middle;
@@ -625,50 +625,71 @@ h1 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
-
-
-
+.erreur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+    padding:20px;
+    color:red;
+}
+.cuisine {
+   width: 200px;
+   height: 180px;
+}
 
 
 /* border:30px solid #6B6B6B;
     } */
-@media (min-width:992px) and (max-width:1200px) {
-
-    .container {
-        width: 100%;
-    }
-
-    .col-footer {
-        font-size: 25px;
-    }
-
-    .latest-work-p {
-
-        font-size: 20px;
-    }
-
-    .text-footer {
-        font-size: 20px;
-    }
-
-
-    .li-footer-links {
-        font-size: 21px;
-    }
-
-    .p-service {
-        font-size: 16px;
-    }
-
-    .size-16 {
-        font-size: 20px;
-    }
-
-}
 
 
 /**************************/
+
+@media (min-width:992px) and (max-width:1200px) { 
+    
+    .container{
+        width: 100%;
+        }
+    
+    .col-footer{
+        font-size: 25px;
+    }
+    .latest-work-p{
+    
+        font-size: 20px;
+    }
+    .text-footer{
+        font-size: 20px;
+    }
+    
+    
+    .li-footer-links{
+        font-size: 21px;
+    }
+    
+    .p-service{
+        font-size: 16px;
+    }
+    
+    .size-16{
+        font-size: 20px;
+    }
+    
+    }
+
+.service h3{
+    font-size: 1.3rem;
+}
+
+.w-33, .w-25{
+    width: 33%;
+}
+.header-height{
+    min-height: 520px;
+}
+}
+
+
+/**********************fin media 1200***************************/
+/************************debut media eric**************************/
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* contact */
     
@@ -769,58 +790,78 @@ width: 100%;
     .f-size-60 {
         font-size: 2.5em;
     }
+   
+    /* border:30px solid #6B6B6B;
+    } */
+   /***********fin media 992******/
+   /**************debut media anthony******************/
+    @media (max-width: 577px) { 
+        .menu-burger{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            right: 300%;
+            width: 100%;
+            font-size: 25px;
+            background-color:var(--green);
+            min-height: 50vh;
+           
+        }.title{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+        }.responsive-image{
+            width: 33%;
+        }
+      
+        .prev{
+            width: 15%;
+        }
+       
+      
+  
+        .responsive-img{
+            display: block;
+        }
+        .text-width{
+            width: 100%;
+        }
+        .responsive-cursus{
+            font-size: 1.5rem;
+        }
+        .responsive{
+            flex-direction: column;
+        }
+        .f-column-reverse{
+            justify-content: flex-start;
+               flex-direction: column-reverse;
+           }
+           .cuisine{
+               width:200px;
+               height: 180px;
+           }
+           .responsive-service{
+               flex-direction: column;
+           }
+           .responsive-contact{
+               flex-direction: column;
+           }
+           .responsive-text-contact{
+               width: 100%;
+           }
+           .portfolio-box-photo{
+               width: 100%;
+           }
+           .footer-responsive{
+               flex-direction: column;
+           }
+           .cuisine{
+               display: none;
+           }
+     }
 
 
-    .service h3{
-        font-size: 1.3rem;
-    }
- 
-    .w-33, .w-25{
-        width: 33%;
-    }
-    .header-height{
-        min-height: 520px;
-    }
-}
 
-
-
-@media (max-width: 577px) {
-    .menu-burger {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 300%;
-        width: 100%;
-        font-size: 25px;
-        background-color: var(--green);
-        min-height: 50vh;
-    }
-
-    .title {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-
-    }
-
-    .responsive-img {
-        display: block;
-    }
-
-    .responsive {
-        flex-direction: column;
-    }
-n
-    .f-column-reverse {
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-    }
-
-    .cuisine {
-        width: 200px;
-        height: 180px;
-    }
-}

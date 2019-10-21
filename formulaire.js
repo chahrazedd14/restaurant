@@ -15,13 +15,14 @@ formvalid.addEventListener('submit',validation);
 function validation (event){
     event.preventDefault();
     if(elName.validity.valueMissing ){
-        missname.innerText='error',
-        missname.style.color='red';
+        missname.innerText='error';
+     
+        
     
     }else if (prenomvalid.test(name.value) ==false){
             event.preventDefault();
             missname.textcontent='incorrect';
-            missname.style.color='orange';
+        
 
 
         
@@ -29,8 +30,8 @@ function validation (event){
 
     }
     if(message.validity.valueMissing ){
-        missmessage.textContent='error',
-        missmessage.style.color='yellow';
+        missmessage.textContent='error';
+    
     
     }else if (message.validity.valid ==false){
             event.preventDefault();
@@ -43,8 +44,8 @@ function validation (event){
 
     }
     if(email.validity.valueMissing ){
-        missemail.textContent='please provide a valid email adress',
-        missemail.style.color='blue';
+        missemail.textContent='please provide a valid email adress';
+        
     
     }else if (regex.test(name.value) ==false){
             event.preventDefault();
@@ -57,8 +58,8 @@ function validation (event){
 
     }
     if(subject.validity.valueMissing ){
-        misssubject.textContent='error',
-        misssubject.style.color='green';
+        misssubject.textContent='error';
+        
     
     }else if (subject.test(subject.value) ==false){
             event.preventDefault();
