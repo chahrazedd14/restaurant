@@ -15,7 +15,7 @@ function ouvert() {
         
 menu.style.transition = "all 1.2s"
         menu.style.right = "0"
-        menu.style.minHeight = "80vh"
+        menu.style.minHeight = "90vh"
         console.log("true");
 
         position =false;

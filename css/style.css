@@ -214,10 +214,9 @@ hr {
     width: 100%;
     margin: 0;
 }
+.service{
 
-.service {
-    /* width: 100%; */
-    background: #660000;
+    background:#660000;
     align-items: stretch;
     padding: 2% 0;
 }
@@ -770,7 +769,6 @@ width: 100%;
     .f-size-60 {
         font-size: 2.5em;
     }
-
    
     /* border:30px solid #6B6B6B;
     } */
@@ -819,47 +817,43 @@ width: 100%;
 }
 
 
+    @media (max-width: 577px) { 
+        .menu-burger{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            right: 300%;
+            width: 100%;
+            font-size: 25px;
+            background-color:var(--green);
+            min-height: 50vh;
+           
+        }.title{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
 
-@media (max-width: 577px) {
-    .menu-burger {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 300%;
-        width: 100%;
-        font-size: 25px;
-        background-color: var(--green);
-        min-height: 50vh;
-    }
-
-    .title {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-
-    }
-
-    .responsive-img {
-        display: block;
-    }
-
-    .responsive {
-        flex-direction: column;
-    }
-n
-    .f-column-reverse {
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-    }
-
+        }.responsive-image{
+            width: 33%;
         }
+      
+        .prev{
+            width: 15%;
+        }
+       
+      
   
         .responsive-img{
             display: block;
         }
-        
+        .text-width{
+            width: 100%;
+        }
+        .responsive-cursus{
+            font-size: 1.5rem;
+        }
         .responsive{
             flex-direction: column;
         }
@@ -870,6 +864,24 @@ n
            .cuisine{
                width:200px;
                height: 180px;
+           }
+           .responsive-service{
+               flex-direction: column;
+           }
+           .responsive-contact{
+               flex-direction: column;
+           }
+           .responsive-text-contact{
+               width: 100%;
+           }
+           .portfolio-box-photo{
+               width: 100%;
+           }
+           .footer-responsive{
+               flex-direction: column;
+           }
+           .cuisine{
+               display: none;
            }
      }
 
