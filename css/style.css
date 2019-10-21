@@ -199,7 +199,7 @@ border:1.5px solid var(--grey-dark);
     margin: 0;
 }
 .service{
-    width:100%;
+
     background:#660000;
     align-items: stretch;
     padding: 2% 0;
@@ -557,8 +557,6 @@ h1{
         animation-duration: 1.5s;
     }
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -570,7 +568,6 @@ h1{
 
 
     }
->>>>>>> 011c0d1eddeda9cafc096740611dee66a79c1a7d
    
     /* border:30px solid #6B6B6B;
     } */
@@ -613,25 +610,39 @@ h1{
         .menu-burger{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: center;
             position: absolute;
             right: 300%;
             width: 100%;
             font-size: 25px;
-            background-color: var(--green);
+            background-color:var(--green);
             min-height: 50vh;
+           
         }.title{
             display: flex;
             justify-content: space-between;
             width: 100%;
             align-items: center;
 
+        }.responsive-image{
+            width: 33%;
         }
+      
+        .prev{
+            width: 15%;
+        }
+       
+      
   
         .responsive-img{
             display: block;
         }
-        
+        .text-width{
+            width: 100%;
+        }
+        .responsive-cursus{
+            font-size: 1.5rem;
+        }
         .responsive{
             flex-direction: column;
         }
@@ -642,5 +653,23 @@ h1{
            .cuisine{
                width:200px;
                height: 180px;
+           }
+           .responsive-service{
+               flex-direction: column;
+           }
+           .responsive-contact{
+               flex-direction: column;
+           }
+           .responsive-text-contact{
+               width: 100%;
+           }
+           .portfolio-box-photo{
+               width: 100%;
+           }
+           .footer-responsive{
+               flex-direction: column;
+           }
+           .cuisine{
+               display: none;
            }
      }
