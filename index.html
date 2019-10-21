@@ -303,17 +303,17 @@
                         1 day ago
                     </p>
                 </div>
-                <div class="col col-footer w-25">
+                <div class="col  w-25">
                     <h2 class="f-weight-100 text-color-white">Contact Us</h2>
                     <form action='traitement.php' id="form1" novalidate method="POST">
                         <input type="text" placeholder="Full Name" id='name' maxlength='20' required >
-                        <span id='missname'></span><br/>
+                        <span class="erreur" id='missname'></span><br/>
                         <input type="email" placeholder="Email Adress" id="email" name="f-addr" required>
-                        <span id ='missemail'></span><br/>
+                        <span class="erreur" id ='missemail'></span><br/>
                         <input type="text" placeholder="Subject" id="subject" name="f-subject" required>
-                        <span id='misssubject'></span><br/>
+                        <span class="erreur" id='misssubject'></span><br/>
                         <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10" required></textarea>
-                        <span id='missmessage'></span><br/>
+                        <span class="erreur" id='missmessage'></span><br/>
                         <button class='btn-green'>SUBMIT</button>  
                     </form>
                 </div>

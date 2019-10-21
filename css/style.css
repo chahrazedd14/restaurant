@@ -371,12 +371,14 @@ ul > li.active{
     border:none;
     border-radius: 5px;
     width: 90%;
-    margin-bottom:10px ;
+    margin-top:0;
 }
 .contact input{
+    margin: 0;
     height: 35px;
 }
 .contact textarea{
+    margin: 0;
     height: 80px;
 }
 .contact p{
@@ -629,4 +631,15 @@ h1{
                width:200px;
                height: 180px;
            }
+     }
+
+
+
+
+
+     .erreur{
+         font-family: Arial, Helvetica, sans-serif;
+         font-size:10px;
+         padding:20px;
+         color:red;
      }
