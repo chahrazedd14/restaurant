@@ -567,6 +567,41 @@ h1{
    
     /* border:30px solid #6B6B6B;
     } */
+    @media (min-width:992px) and (max-width:1200px) { 
+    
+        .container{
+            width: 100%;
+            }
+        
+        .col-footer{
+            font-size: 25px;
+        }
+        .latest-work-p{
+        
+            font-size: 20px;
+        }
+        .text-footer{
+            font-size: 20px;
+        }
+        
+        
+        .li-footer-links{
+            font-size: 21px;
+        }
+        
+        .p-service{
+            font-size: 16px;
+        }
+        
+        .size-16{
+            font-size: 20px;
+        }
+        
+        }
+
+
+    /***************fim media 1200************/
+
     @media (max-width: 577px) { 
         .menu-burger{
             display: flex;
