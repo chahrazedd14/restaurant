@@ -14,4 +14,4 @@ else{
     menu.style.right="300%"
     console.log("true");
 }
-} 
+}
