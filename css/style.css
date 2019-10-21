@@ -557,6 +557,20 @@ h1{
         animation-duration: 1.5s;
     }
 
+<<<<<<< HEAD
+=======
+
+
+
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .contact > .col:first-child {  
+            display: none;
+        }
+
+
+
+    }
+>>>>>>> 011c0d1eddeda9cafc096740611dee66a79c1a7d
    
     /* border:30px solid #6B6B6B;
     } */
