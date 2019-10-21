@@ -408,7 +408,7 @@ h1{
     height: 380px;
     border:30px solid #6B6B6B;
     }
-    @media (max-width: 576.98px) { 
+    @media (max-width: 577px) { 
         .menu-burger{
             display: flex;
             flex-direction: column;
