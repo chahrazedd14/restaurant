@@ -551,6 +551,50 @@ h1{
         .ser-lorem{
             justify-content: center;  
         }
+        .service-3, .service-4{
+            text-align:center ;
+        }
+        .portfolio-box-photo {
+            width: 370px;
+            height: 190px;
+            margin-bottom: 30px;
+            background-position: center;
+            background-size: cover;
+            border: 5px solid #FFFFFF;
+
+        } 
+        .container {
+            max-width: 904px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .d-flex {
+            display: flex;
+        }
+        .white {
+            background: white;
+            padding: 8px;
+        }
+        ul > li {
+            min-width: 110px;
+            text-align: center;
+            padding: 8px;
+            box-sizing: border-box;
+            display: none;
+        }
+        .cuisine {
+            border-radius: 72%;
+            width: 322px;
+            height: 301px;
+            border: 8px solid #6B6B6B;
+            float: right;
+            top: 133px;
+            left: 26px;
+            position: absolute;
+        }
+        .m-bottom-10 {
+            margin-bottom: 174px;
+        }
         
 
      }
