@@ -25,24 +25,37 @@
 <body>
     <!--header-->
     <header class='container-fluid header-height bg-marron text-color-white'>
-        <div class="row">
-            <div class="container d-flex f-justify-content-between f-align-items-center">
-                <div class="col">
+        <div class="row ">
+            <div class="container d-flex f-justify-content-between  f-align-items-center responsive">
+                <div class="col title">
+                    <div>
                     <h1 class="m-0 text-capital f-size-27 f-weight-light">the modernist</h1>
                     <p class="m-0 text-color-grey-light f-size-11">free psd website template</p>
+                    </div>
+             
+                    <div class="col d-none  responsive-img img-width">
+                            <p><img src="medias/icons8-menu-64.png" onclick="ouvert()"></p>
+                        </div>
                 </div>
                 <div class="col m-hor m-ver ">
                 
                     <nav>
-                        <ul class="d-flex text-upper f-size-14 f-bold  ">
+                        <!-- <img src="medias/icons8-menu-64.png" onclick="ouvert()" class="visible-non d-flex"></a> -->
+
+                        <ul class="d-flex menu-burger f-align-items-center  text-upper menu  f-size-14 f-bold menu-responsive   " id="relative">
                             <li class="active"><a href="#home">home</a></li>
-                            <li><a href="#style-demo">style demo</a></li>
-                            <li><a href="#full-width">full width</a></li>
-                            <li><a href="#dropdown">dropdown</a></li>
-                            <li><a href="#portfolio">portfolio</a></li>
-                            <li><a href="#gallery">gallery</a></li>
+                            <li><a href="#style-demo" class="relative">style demo</a></li>
+                            <li><a href="#full-width" class="relative">full width</a></li>
+                            <li><a href="#dropdown" class="relative">dropdown</a></li>
+                            <li><a href="#portfolio" class="relative">portfolio</a></li>
+                            <li><a href="#gallery" class="relative">gallery</a></li>
+                            <div class="col   ">
+                                      
                         </ul>
+                      
                     </nav>
+            
+                
                 </div>
             </div>
         </div>
@@ -220,6 +233,8 @@
                     <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
@@ -323,6 +338,7 @@
 
     <script src="carrousel.js"></script>
     <script src="formulaire.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
