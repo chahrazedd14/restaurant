@@ -673,19 +673,20 @@ h1 {
         font-size: 20px;
     }
     
+
+
+    .service h3{
+        font-size: 1.3rem;
     }
 
-.service h3{
-    font-size: 1.3rem;
+    .w-33, .w-25{
+        width: 33%;
+    }
+    .header-height{
+        min-height: 520px;
+    }
 }
 
-.w-33, .w-25{
-    width: 33%;
-}
-.header-height{
-    min-height: 520px;
-}
-}
 
 
 /**********************fin media 1200***************************/
@@ -695,7 +696,6 @@ h1 {
     
     .contact>.row>.container>.col:first-child,
     .contact>.row>.container>.col:nth-child(3)
-    
     {
         display: none;
     }
@@ -775,7 +775,7 @@ h1 {
     /* slider */
 
     .mySlides{
-width: 100%;
+        width: 100%;
     }
     .mySlides > .d-flex > .col:first-child{
 
@@ -790,78 +790,78 @@ width: 100%;
     .f-size-60 {
         font-size: 2.5em;
     }
+}
    
-    /* border:30px solid #6B6B6B;
-    } */
-   /***********fin media 992******/
-   /**************debut media anthony******************/
-    @media (max-width: 577px) { 
-        .menu-burger{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            right: 300%;
-            width: 100%;
-            font-size: 25px;
-            background-color:var(--green);
-            min-height: 50vh;
-           
-        }.title{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            align-items: center;
+/* border:30px solid #6B6B6B;
+} */
+/***********fin media 992******/
+/**************debut media anthony******************/
+@media (max-width: 577px) { 
+    .menu-burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 300%;
+        width: 100%;
+        font-size: 25px;
+        background-color:var(--green);
+        min-height: 50vh;
+        
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
 
-        }.responsive-image{
-            width: 33%;
-        }
-      
-        .prev{
-            width: 15%;
-        }
-       
-      
-  
-        .responsive-img{
-            display: block;
-        }
-        .text-width{
-            width: 100%;
-        }
-        .responsive-cursus{
-            font-size: 1.5rem;
-        }
-        .responsive{
-            flex-direction: column;
-        }
-        .f-column-reverse{
-            justify-content: flex-start;
-               flex-direction: column-reverse;
-           }
-           .cuisine{
-               width:200px;
-               height: 180px;
-           }
-           .responsive-service{
-               flex-direction: column;
-           }
-           .responsive-contact{
-               flex-direction: column;
-           }
-           .responsive-text-contact{
-               width: 100%;
-           }
-           .portfolio-box-photo{
-               width: 100%;
-           }
-           .footer-responsive{
-               flex-direction: column;
-           }
-           .cuisine{
-               display: none;
-           }
-     }
+    }
+    .responsive-image{
+        width: 33%;
+    }
+    
+    .prev{
+        width: 15%;
+    }
+    
+    
 
-
-
+    .responsive-img{
+        display: block;
+    }
+    .text-width{
+        width: 100%;
+    }
+    .responsive-cursus{
+        font-size: 1.5rem;
+    }
+    .responsive{
+        flex-direction: column;
+    }
+    .f-column-reverse{
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+    .cuisine{
+        width:200px;
+        height: 180px;
+    }
+    .responsive-service{
+        flex-direction: column;
+    }
+    .responsive-contact{
+        flex-direction: column;
+    }
+    .responsive-text-contact{
+        width: 100%;
+    }
+    .portfolio-box-photo{
+        width: 100%;
+    }
+    .footer-responsive{
+        flex-direction: column;
+    }
+    .cuisine{
+        display: none;
+    }
+}
