@@ -110,6 +110,9 @@ width: 100%;
 .w-25{
     width: 25%;
 }
+.m-top{
+    margin-top:20px;
+}
 hr{
     max-width: 960px;
     width:100% ;
@@ -651,8 +654,8 @@ h1{
                flex-direction: column-reverse;
            }
            .cuisine{
-               width:200px;
-               height: 180px;
+               width:230px;
+               height: 230px;
            }
            .responsive-service{
                flex-direction: column;
@@ -663,13 +666,20 @@ h1{
            .responsive-text-contact{
                width: 100%;
            }
+           .fleche-dessus{
+               justify-self: flex-end;
+           }
            .portfolio-box-photo{
                width: 100%;
            }
            .footer-responsive{
                flex-direction: column;
            }
-           .cuisine{
-               display: none;
-           }
+         .responsive-flex{
+             display: flex;
+             flex-direction: column-reverse;
+         }
+         .w-33{
+             width: 100%;
+         }
      }
