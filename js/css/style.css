@@ -104,15 +104,15 @@ h2 {
     background: var(--grey-dark);
     color: var(--white);
     font-size: 1.6em;
-    padding: 11px 0;
-    margin-top: -2px;
+    padding:8px 0;
+    /* margin-top: -2px; */
     border-radius: var(--grey-dark);
     border-radius: 5px;
 }
 
 .w-33 {
-    width: 40%;
-    margin-top: 15px;
+    width: 33.33%;
+  
 }
 
 .w-25 {
@@ -125,7 +125,7 @@ hr {
     height: 0px;
     margin-bottom: 0;
     padding: auto;
-    border:1.5px solid var(--grey-dark);
+    border: 1.5px solid var(--grey-dark);
     background: var(--grey-dark);
 }
 
@@ -165,7 +165,7 @@ hr {
     background-image: url("../media/macaron.jpg");
 }
 
-.box-photo-bg1::hove {
+.box-photo-bg1:hover {
     background-color: var(--green);
 }
 
@@ -187,22 +187,6 @@ hr {
     border: 5px solid #FFFFFF;
 }
 
-/* .portfolio-box-photo::before{
-    
-    width: 270px;
-    height: 270px;
-    background-color: var(--grey-dark);
-    color: var(--white);
-    text-align: center;
-    font-size: 2em;
-    display: none;
-    line-height: 270px;
-    cursor: pointer;
-}
-.portfolio-box-photo:hover::before{
-    display: block;
-
-} */
 
 .h {
     height: 190px;
@@ -214,9 +198,10 @@ hr {
     width: 100%;
     margin: 0;
 }
-.service{
 
-    background:#660000;
+.service {
+
+    background: #660000;
     align-items: stretch;
     padding: 2% 0;
 }
@@ -264,7 +249,7 @@ hr {
 }
 
 .f-justify-content-around {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -322,9 +307,7 @@ hr {
 }
 
 /* systheme texte */
-.text-upper {
-    text-transform: uppercase
-}
+
 
 .text-color-green {
     color: var(--green);
@@ -335,7 +318,7 @@ hr {
 }
 
 .text-color-white {
-    color: var(--white)
+    color: var(--white);
 }
 
 .text-color-grey-light {
@@ -393,7 +376,7 @@ ul>li.active {
 .puce-style li {
     text-align: left;
     font-size: 0.8rem;
-    ;
+
 }
 
 
@@ -418,14 +401,16 @@ ul>li.active {
     border: none;
     border-radius: 5px;
     width: 90%;
-    margin-top:0;
+    margin-top: 10px;
 }
-.contact input{
-    margin: 0;
+
+.contact input {
+   
     height: 35px;
 }
-.contact textarea{
-    margin: 0;
+
+.contact textarea {
+   
     height: 80px;
 }
 
@@ -509,14 +494,20 @@ h1 {
 .f-weight-light {
     font-weight: 200;
 }
-
+.erreur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    color: red;
+}
+/* ######carousell#### */
 /* ######carousell#### */
 .bouton-bordure {
     border: 1px solid var(--green);
-    width: 150px;
+    width: 170px;
     background-color: var(--green);
-    border-radius: 13px;
-    text-align:center ;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
     height: 30px;
     display: table-cell;
     vertical-align: middle;
@@ -625,77 +616,65 @@ h1 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.erreur{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:10px;
-    padding:20px;
-    color:red;
-}
-.cuisine {
-   width: 200px;
-   height: 180px;
-}
 
 
-/* border:30px solid #6B6B6B;
-    } */
+
+
+
+
+
+
+
 
 
 /**************************/
 
-@media (min-width:992px) and (max-width:1200px) { 
-    
-    .container{
+@media (min-width:992px) and (max-width:1200px) {
+
+    .container {
         width: 100%;
-        }
-    
-    .col-footer{
+    }
+
+    .col-footer {
         font-size: 25px;
     }
-    .latest-work-p{
-    
+
+    .latest-work-p {
+
         font-size: 20px;
     }
-    .text-footer{
+
+    .text-footer {
         font-size: 20px;
     }
-    
-    
-    .li-footer-links{
+
+
+    .li-footer-links {
         font-size: 21px;
     }
-    
-    .p-service{
+
+    .p-service {
         font-size: 16px;
     }
-    
-    .size-16{
+
+    .size-16 {
         font-size: 20px;
     }
-    
-    }
 
-.service h3{
-    font-size: 1.3rem;
-}
 
-.w-33, .w-25{
-    width: 33%;
-}
-.header-height{
-    min-height: 520px;
-}
+
+
 }
 
 
 /**********************fin media 1200***************************/
 /************************debut media eric**************************/
+
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* contact */
     
     .contact>.row>.container>.col:first-child,
     .contact>.row>.container>.col:nth-child(3)
-    
     {
         display: none;
     }
@@ -775,7 +754,7 @@ h1 {
     /* slider */
 
     .mySlides{
-width: 100%;
+        width: 100%;
     }
     .mySlides > .d-flex > .col:first-child{
 
@@ -790,78 +769,92 @@ width: 100%;
     .f-size-60 {
         font-size: 2.5em;
     }
+}
    
-    /* border:30px solid #6B6B6B;
-    } */
-   /***********fin media 992******/
-   /**************debut media anthony******************/
-    @media (max-width: 577px) { 
-        .menu-burger{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            right: 300%;
-            width: 100%;
-            font-size: 25px;
-            background-color:var(--green);
-            min-height: 50vh;
-           
-        }.title{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            align-items: center;
-
-        }.responsive-image{
-            width: 33%;
-        }
-      
-        .prev{
-            width: 15%;
-        }
-       
-      
-  
-        .responsive-img{
-            display: block;
-        }
-        .text-width{
-            width: 100%;
-        }
-        .responsive-cursus{
-            font-size: 1.5rem;
-        }
-        .responsive{
-            flex-direction: column;
-        }
-        .f-column-reverse{
-            justify-content: flex-start;
-               flex-direction: column-reverse;
-           }
-           .cuisine{
-               width:200px;
-               height: 180px;
-           }
-           .responsive-service{
-               flex-direction: column;
-           }
-           .responsive-contact{
-               flex-direction: column;
-           }
-           .responsive-text-contact{
-               width: 100%;
-           }
-           .portfolio-box-photo{
-               width: 100%;
-           }
-           .footer-responsive{
-               flex-direction: column;
-           }
-           .cuisine{
-               display: none;
-           }
-     }
 
 
 
+/**************debut media anthony******************/
+
+@media (max-width: 577px) {
+    .menu-burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 300%;
+        width: 100%;
+        font-size: 25px;
+        background-color: var(--green);
+        min-height: 50vh;
+
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .responsive-image {
+        width: 33%;
+    }
+
+    .prev {
+        width: 15%;
+    }
+
+
+
+    .responsive-img {
+        display: block;
+    }
+
+    .text-width {
+        width: 100%;
+    }
+
+    .responsive-cursus {
+        font-size: 1.5rem;
+    }
+
+    .responsive, .responsive-wc {
+        flex-direction: column;
+    }
+
+    .f-column-reverse {
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .cuisine {
+        width: 200px;
+        height: 180px;
+    }
+
+    .responsive-service {
+        flex-direction: column;
+    }
+
+    .responsive-contact {
+        flex-direction: column;
+    }
+
+    .responsive-text-contact {
+        width: 100%;
+    }
+
+    .portfolio-box-photo {
+        width: 100%;
+    }
+
+    .footer-responsive {
+        flex-direction: column;
+    }
+
+    .cuisine {
+        display: none;
+    }
+}
