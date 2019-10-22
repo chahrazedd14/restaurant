@@ -130,27 +130,27 @@ border:1.5px solid var(--grey-dark);
 }
 
 .box-photo-bg1{
-    background-image:url('../media/croissant.jpg');
+    background-image:url("../media/chef.jpg");
 }
 
 .box-photo-bg2{
-    background-image:url("../media/balcool.jpg");  
+    background-image:url("../media/table.jpg");  
 }
 
 .box-photo-bg3{
-    background-image:url("../media/drink.jpg");  
+    background-image:url("../media/dri.jpg");  
 }
 
 .box-photo-bg4{
-    background-image:url("../media/fourchette.jpg"); 
+    background-image:url("../media/dej.jpg"); 
 }
 
 .box-photo-bg5{
-    background-image:url("../media/dej.jpg");
+    background-image:url("../media/croissant.jpg");
 }
 
 .box-photo-bg6{
-    background-image:url("../media/be.jpg");
+    background-image:url("../media/macaron.jpg");
 }
 .box-photo-bg1::hove{
     background-color: var(--green);
@@ -223,15 +223,18 @@ border:1.5px solid var(--grey-dark);
     padding: 7px;
 }
 .w-25{
-    width: 28%;
+    width: 25%;
 }
+
 
 /* systme flexbox */
 
 .d-flex{
     display: flex;
 }
-
+.d-block{
+    display: block;
+}
  .d-inline-flex{ 
     display: inline-flex;
 }
@@ -247,6 +250,9 @@ border:1.5px solid var(--grey-dark);
     align-items: center;
   
 } 
+.d-none{
+    display: none;
+}
    .f-justify-content-center{
    justify-content: center;
         
@@ -264,6 +270,7 @@ border:1.5px solid var(--grey-dark);
 .justify-self{
     justify-self: flex-start;
 }
+
 
 /* systeme margin et padding */
 .m-0{
@@ -315,6 +322,9 @@ ul > li{
     text-align:center;
     padding: 8px;
     box-sizing: border-box;
+}
+ul > li.active{
+    border:2px solid var(--green);
 }
 
 
@@ -382,7 +392,8 @@ ul > li{
 footer{
     background-color: #2b2b2b;
     color:var(--white);
-    font-size: 0.7rem;}
+    font-size: 0.7rem;
+}
 .text-capital{
     text-transform: capitalize;
 }
@@ -399,6 +410,8 @@ footer{
     font-size: 27px;
     /* font-size: 0.7rem; */
 }
+
+
 
 
     .zoom img:hover {
@@ -459,8 +472,9 @@ h1{
 .zoom:hover .plorem{
     display:none;
 }
-
-
+.visible-non{
+    display: none;
+}
 .cuisine{
     border-radius:60%;
     width: 380px;
@@ -543,7 +557,16 @@ h1{
         animation-name: fade;
         animation-duration: 1.5s;
     }
-    @media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 577px) and (max-width: 768px){
+ .contact>.row>.container>.col:first-child,
+  .contact>.row>.container>.col:nth-child(2)
+    {
+          display: none;
+      }
+  .col {
+            margin:  0px;
+            padding: 0px;
+        }
          .f-wrap {
             flex-wrap: wrap;
             justify-content: center;
@@ -561,7 +584,6 @@ h1{
             background-position: center;
             background-size: cover;
             border: 5px solid #FFFFFF;
-
         } 
         .container {
             max-width: 904px;
@@ -573,7 +595,8 @@ h1{
         }
         .white {
             background: white;
-            padding: 8px;
+            padding: 19px;
+            margin: 16px;
         }
         ul > li {
             min-width: 110px;
@@ -583,18 +606,151 @@ h1{
             display: none;
         }
         .cuisine {
+            display: none;
             border-radius: 72%;
             width: 322px;
             height: 301px;
             border: 8px solid #6B6B6B;
-            float: right;
-            top: 133px;
-            left: 26px;
-            position: absolute;
+            margin-top : 89px
         }
         .m-bottom-10 {
             margin-bottom: 174px;
         }
+        .m-bottom-30 {
+            margin-bottom: 18px;
+        }
+        .text-width {
+            width: 287px;
+        }
+        .menu-burger{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 300%;
+            width: 100%;
+            font-size: 25px;
+            background-color: var(--green);
+            min-height: 50vh;
+        }
+    
+        .ser-lorem{
+            flex-direction: column;
+        }
+        /* .w-25 {
+            width: 60%;
+        .responsive-img{
+            display: block;
+        }
+         */
+        .responsive{
+            flex-direction: column;
+        }
+        .f-column-reverse{
+            justify-content: flex-start;
+               flex-direction: column-reverse;
+           }
+           .cuisine{
+               width:200px;
+               height: 180px;
+           }
+           .responsive-img{
+            display: block;
+        }
         
+        .responsive{
+            flex-direction: column;
+        }
+        .f-column-reverse{
+            justify-content: flex-start;
+               flex-direction: column-reverse;
+           }
+           .cuisine{
+               width:200px;
+               height: 180px;
+           }
+ }
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .contact > .col:first-child {  
+            display: none;
+        }
 
+
+
+    }
+   
+    /* border:30px solid #6B6B6B;
+    } */
+    @media (min-width:992px) and (max-width:1200px) { 
+    
+        .container{
+            width: 100%;
+            }
+        
+        .col-footer{
+            font-size: 25px;
+        }
+        .latest-work-p{
+        
+            font-size: 20px;
+        }
+        .text-footer{
+            font-size: 20px;
+        }
+        
+        
+        .li-footer-links{
+            font-size: 21px;
+        }
+        
+        .p-service{
+            font-size: 16px;
+        }
+        
+        .size-16{
+            font-size: 20px;
+        }
+        
+        }
+
+
+    /***************fim media 1200************/
+
+    @media (max-width: 577px) { 
+        .menu-burger{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 300%;
+            width: 100%;
+            font-size: 25px;
+            background-color: var(--green);
+            min-height: 50vh;
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+        }
+  
+        .responsive-img{
+            display: block;
+        }
+        
+        .responsive{
+            flex-direction: column;
+        }
+        .f-column-reverse{
+            justify-content: flex-start;
+               flex-direction: column-reverse;
+           }
+           .cuisine{
+               width:200px;
+               height: 180px;
+           }
      }
+    }
+    
