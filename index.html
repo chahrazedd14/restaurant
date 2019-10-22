@@ -1,186 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- meta -->
-    <meta name="author" content="Eric, Chehrazad, Anthony, Faycel">
-    <meta name="category" content="Restaurant.">
-    <meta name="Keywords" content="Maquette,Restaurant ">
-    <meta property="og:title" content="Restaurant">
-    <meta property="og:description" content="Resaurant bienvenue sur notre page d'accueil.">
-    <meta property="og:image" content="http://chahrazedd.promo-vesoul33.codeur.online/restaurant/media/resto.jpg">
-    <meta property="og:url" content="http://chahrazedd.promo-vesoul33.codeur.online/restaurant">
-    <meta name="twitter:title" content="Restaurant">
-    <meta name="twitter:description" content="Restaurant, bienvenue sur notre page d'accueil,restaurant.">
-    <meta name="twitter:image" content="http://chahrazedd.promo-vesoul33.codeur.online/retaurant/media/resto.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="http://chahrazedd.promo-vesoul33.codeur.online/restaurant/index.html">
-    <title>Restaurant ACS</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
+
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 960px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+            color: black;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            vertical-align: middle;
+
+
+            margin: auto;
+
+            padding: 16px;
+            color: green;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: goldenrod;
+            line-height: 20px;
+        }
+
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    </style>
 </head>
 
 <body>
-    <!--header-->
     <header class='container-fluid header-height bg-marron text-color-white'>
-        <div class="row ">
-            <div class="container d-flex f-justify-content-between  f-align-items-center responsive">
-                <div class="col title">
-                    <div>
+        <div class="row">
+            <div class="container d-flex f-justify-content-between f-align-items-center">
+                <div class="col">
                     <h1 class="m-0 text-capital f-size-27 f-weight-light">the modernist</h1>
                     <p class="m-0 text-color-grey-light f-size-11">free psd website template</p>
-                    </div>
-             
-                    <div class="col d-none  responsive-img img-width">
-                            <p><img src="media/burger-menu.png" onclick="ouvert()" alt="icone menu"></p>
-                        </div>
                 </div>
-                <div class="col m-hor m-ver ">
-                
+                <div class="col ">
                     <nav>
-                        <!-- <img src="medias/icons8-menu-64.png" onclick="ouvert()" class="visible-non d-flex"></a> -->
-
-                        <ul class="d-flex menu-burger f-align-items-center  text-upper menu  f-size-14 f-bold menu-responsive   " id="relative">
+                        <ul class="d-flex text-upper f-size-14 f-bold  ">
                             <li class="active"><a href="#home">home</a></li>
-                            <li><a href="#style-demo" class="relative">style demo</a></li>
-                            <li><a href="#full-width" class="relative">full width</a></li>
-                            <li><a href="#dropdown" class="relative">dropdown</a></li>
-                            <li><a href="#portfolio" class="relative">portfolio</a></li>
-                            <li><a href="#gallery" class="relative">gallery</a></li>
-                        
-                                      
+                            <li><a href="#style-demo">style demo</a></li>
+                            <li><a href="#full-width">full width</a></li>
+                            <li><a href="#dropdown">dropdown</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#gallery">gallery</a></li>
                         </ul>
-                      
                     </nav>
-            
-                
                 </div>
             </div>
         </div>
-        <!-- carroussel-->
         <div class="row  ">
             <div class="container  f-justify-content-between d-flex ">
 
-                <p class="prev" onclick="plusSlides(-1)">&#10094;</p>
-                <!-- 1st slides-->
-                <div class="   mySlides ">
-                   <div class="d-flex">
-                        <div class="col  align-self-center responsive-text  ">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
-                            <h2 class="f-size-60 f-weight-light m-bottom-10 responsive-cursus">Cursus penati
-                                saccum nulla.</h2>
+                <div class="  d-flex f-justify-content-between mySlides">
 
-                            <p class="text-color-grey-light text-width m-bottom-30 size-16">Nullamlacus dui ipsum conseque
-                                loborttis non
-                                euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue
-                                magnis
-                                vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
-                            <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
-                            </p>
-                        </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dolorum reiciendis magni
+                        molestiae vero eius fuga dolores? Laboriosam id, error perferendis iure ipsum ex officia debitis
+                        obcaecati. Illo, natus consequuntur!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos nam inventore totam
+                        labore exercitationem consectetur ut possimus alias, ipsam recusandae a deleniti debitis tenetur
+                        ducimus accusamus iusto? Id, quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque similique non?
+                        Repellendus debitis quibusdam officiis officia consequatur, cumque quia placeat fuga ipsa
+                        tempora hic sequi excepturi velit at minus.</p>
 
-                        <div class="col responsive-image" id="image">
+            </div>
+            <div class="  d-flex f-justify-content-between mySlides">
 
-                            <p><img src="media/city.jpg" alt="terrasse restaurant" width="1920" height="1280" class="b-radius cuisine "></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd slides-->
-                <div class="   mySlides">
+                <div class="col align-self-center ">
+                    <h2 class="f-size-60 f-weight-light m-bottom-10 text-width">Cursus penati
+                        saccum nulla.</h2>
 
+                    <p class="text-color-grey-light text-width m-bottom-30">Nullamlacus dui ipsum conseque loborttis
+                        non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue
+                        magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                    <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a></p>
 
-                    <div class="d-flex">
-
-                        <div class="col  align-self-center  ">
-
-                            <h2 class="f-size-60 f-weight-light m-bottom-10 size-16 responsive-cursus">Optio aliquam earum soluta .</h2>
-
-                            <p class="text-color-grey-light text-width m-bottom-30 ">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Laboriosam, non. Optio aliquam earum soluta voluptatum
-                                harum quod ratione corrupti, ea nulla cum repellendus in nisi fuga magnam, suscipit
-                                fugiat? Voluptatibus.</p>
-                            <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
-                            </p>
-                        </div>
-
-                        <div class="col">
-                            <p><img src="media/christmas.jpg" alt="table noel" width="1920" height="1280" class="b-radius cuisine "></p>
-                        </div>
-
-                    </div>
 
                 </div>
-<!--3em slide-->
-<div class="   mySlides ">
 
 
-        <div class="d-flex">
 
-            <div class="col  align-self-center  ">
+            </div>
+            <div class="  d-flex f-justify-content-between mySlides">
 
-                <h2 class="f-size-60 f-weight-light m-bottom-10 responsive-cursus">Lorem ipsum dolor sit</h2>
+                <div class="col align-self-center ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut, praesentium qui
+                        perspiciatis sit tempora, optio eveniet porro aliquam rerum maxime magni iure quam? Odio
+                        necessitatibus iure nobis nesciunt reprehenderit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem omnis
+                        excepturi, ipsam, earum totam velit veritatis ut qui dolorum neque maxime dolore vel rem placeat
+                        optio consectetur vitae quisquam.</p>
+                    <p>Quis quos quod, maiores id itaque nisi quo exercitationem ipsum iure. Nisi, quidem. Ex mollitia
+                        aperiam suscipit aspernatur quos, dolor alias fugit est voluptatibus laborum pariatur, maxime
+                        accusantium dolorem qui!</p>
+                    <p>Porro, quidem culpa cupiditate veritatis optio ipsum facere laboriosam possimus maxime assumenda
+                        laudantium quis? Rerum, quibusdam, harum autem non rem ipsum libero magni praesentium quae
+                        voluptatem sed, nesciunt ratione numquam.</p>
 
-                <p class="text-color-grey-light text-width m-bottom-30">Lorem ipsum dolor sit amet
-                    consfgdfgfgdf ne corrupti, ea nulla cufdgf s infdgdf fg nisi fuga dfg gnam, suscipit
-                    fugiat? Voluptfg fd fdg fdg dfgatibus.</p>
-                <p class="bouton-bordure text-capital"><a class="active" href="#">read more here&#187;</a>
-                </p>
+                </div>
+
+
+
             </div>
 
-            <div class="col">
-                <p><img src="media/balcool.jpg" alt="bar alcool" width="1920" height="1441" class="b-radius cuisine "></p>
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+
             </div>
 
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-    </div>
-
-<!-- -->
-               <p  class="next"  onclick="plusSlides(1)">&#10095;</p> 
-
-              
-
- 
-
-            </div>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+        </div>
         </div>
     </header>
-
-    <!-- 2nd partie-->
+    <!-- 2nd partie -->
     <div class="container-fluid service">
         <div class="row">
-            <div class="container d-flex responsive-wc service ">
+            <div class="container d-flex ">
                 <div class="col d-flex ">
                     <div class="service-1 s-hover white pointer">
-                        <p><img class="media" src="media/saumon.jpg" alt="saumon" height="1396" width="1920" /></p>
-                        <h2 class="f-weight-100">SERVICE TITLE</h2>
-                        <p class="service-text p-service">Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta
+                        <p><img class="media" src="media/saumon.jpg" alt="saumon" height=1396 widht=1920 /></p>
+                        <h2>SERVICE TITLE</h2>
+                        <p class="service-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta
                             habitur augue
                         </p>
                     </div>
                 </div>
                 <div class="col d-flex ">
                     <div class="service-2 s-hover white pointer">
-                        <p><img class="media" src="media/coc.jpg" alt="coc" height="1360" width="1920" /></p>
-                        <h2 class="f-weight-100">SERVICE TITLE</h2>
-                        <p class="service-text p-service">Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta
+                        <p><img class="media" src="media/coc.jpg" alt="coc" height=1360 widht=1920 /></p>
+                        <h2>SERVICE TITLE</h2>
+                        <p class="service-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta
                             habitur augue
                         </p>
                     </div>
                 </div>
                 <div class="col d-flex ">
                     <div class="service-3 s-hover white pointer ">
-                        <p><img class="media" src="media/cr.jpg" alt="cr" height="1360" width="1920" /></p>
-                        <h2 class="f-weight-100">SERVICE TITLE</h2>
-                        <p class="service-text p-service">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                        <p><img class="media" src="media/cr.jpg" alt="cr" height=1360 widht=1920 /></p>
+                        <h2>SERVICE TITLE</h2>
+                        <p class="service-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
                             ueta
                             habitur augue
                         </p>
@@ -188,69 +213,102 @@
                 </div>
                 <div class="col d-flex ">
                     <div class="service-4 s-hover white pointer">
-                        <p><img class="media" src="media/cupcake.jpg" alt="cupcake" height="1360" width="1920" /></p>
-                        <h2 class="f-weight-100">SERVICE TITLE</h2>
-                        <p class="service-text p-service">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
+                        <p><img class="media" src="media/cupcake.jpg" alt="cupcake" height=1360 widht=1920 /></p>
+                        <h2>SERVICE TITLE</h2>
+                        <p class="service-text">Vestassapede et donec ut est libe ros sus et eget sed eget quisq
                             ueta habitur augue
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- lastest work start-->
+
         <div class="row">
-            <div class="container d-flex p-top-bot f-justify-content-arround f-align-items-center">
+            <div class="container d-flex">
                 <div class="w-33">
                     <hr />
                 </div>
-                <div class="w-33">
+                <div class="w-25">
 
-                    <h3 class="f-weight-100">LASTEST WORK </h3>
+                    <h3>LASTEST WORK </h3>
 
                 </div>
                 <div class="w-33">
                     <hr />
                 </div>
             </div>
+
         </div>
-            <div class="row">
-            <div class="container pointer">
-            <div class=" d-flex f-wrap f-justify-content-between">
-
-                    <div class="box-photo-bg1 portfolio-box-photo">
-                    <p class="service-text-1 text-white plorem ">LOREM IPSUM DOLOR</p>
-                    </div>
-
-                    <div class="box-photo-bg2 portfolio-box-photo"> 
-                    <p class="service-text-1 text-white plorem ">LOREM IPSUM DOLOR</p>
 
 
-                    </div>
-                    <div class="box-photo-bg3 portfolio-box-photo">
+        <!--cuisine-->
+
+
+        <div class="container d-flex f-wrap">
+            <div class="col-1 d-flex ">
+                <div class=" border pointer zoom">
+                    <p class="m-0 h"><img class="media-2 service-text" src="media/bar.jpg" alt="bar" height=1396
+                            widht=1920 /></p>
                     <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                    <div class="box-photo-bg4 portfolio-box-photo">
-                    <p class="service-text-1 text-white plorem ">LOREM IPSUM DOLOR</p>
-                    </div>
-                    <div class="box-photo-bg5 portfolio-box-photo">
-                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
-                    </div>
-                    <div class="box-photo-bg6 portfolio-box-photo">
-                    <p class="service-text-1 text-white plorem latest-work-p">LOREM IPSUM DOLOR</p>
-                    </div>
                 </div>
-
-
             </div>
+            <div class="col-1 d-flex ">
+                <div class=" border pointer zoom">
+                    <p class="m-0 h"><img class="media-2 service-text " src="media/drink.jpg" alt="drink" height=1360
+                            widht=1920 /></p>
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+
+
+                </div>
+            </div>
+            <div class="col-1 d-flex ">
+                <div class="border pointer zoom">
+                    <p class="m-0 h"><img class="media-2 sevice-text" src="media/fourchette.jpg" alt="fourchette"
+                            height=1360 widht=1920 /></p>
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+
+
+                </div>
+            </div>
+
         </div>
+        <div class="container d-flex service f-wrap">
+            <div class="col-1 d-flex ">
+                <div class=" border pointer zoom">
+                    <p class="m-0 h"><img class="media-2" src="media/dej.jpg" alt="dej" height=1396 width=1920 /></p>
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
 
 
-       </div>         
+                </div>
+            </div>
+            <div class="col-1 d-flex ">
+                <div class="border pointer zoom">
+                    <p class="m-0 h"><img class="media-2 sevice-text" src="media/croissant.jpg" alt="croissant"
+                            height=1360 widht=1920 /></p>
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+
+
+                </div>
+            </div>
+            <div class="col-1 d-flex ">
+                <div class="border pointer zoom">
+                    <p class="m-0 h"><img class="media-2 sevice-text" src="media/be.jpg" alt="be" height=1360
+                            widht=1920 /></p>
+                    <p class="service-text-1 text-white plorem">LOREM IPSUM DOLOR</p>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
     <!--  3eme partie  -->
     <div class="contact container-fluid">
         <div class="row">
-            <div class="container responsive-contact  d-flex">
-                <div class="col col-footer w-25 responsive-text-contact">
+            <div class="container d-flex">
+                <div class="col w-25">
                     <h2 class="f-weight-100 text-color-white">From The Blog</h2>
                     <p class='text-color-green'>Post Title</p>
                     <p>
@@ -261,57 +319,47 @@
                     </p>
 
                     <p class='f-size-0-6'>Friday, 6th April 2000</p>
-                    <p class="text-footer">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit
-                        intesque sed.
-                        Facilispede estibulum nulla orna nisl velit elit ac aliquat non
-                        tincidunt. Namjusto cras urna
+                    <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed.
+                        Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna
                         urnaretra lor urna neque sed quis orci nulla.</p>
                     <p class='text-color-green'>Read More »</p>
 
                 </div>
-                <div class="col col-footer w-25 responsive-text-contact">
+                <div class="col w-25">
                     <h2 class="f-weight-100 text-color-white">Quick Links</h2>
                     <ul class="text-color-green puce-style">
-                        <li class="border-b li-footer-links">Lorem ipsum dolor sit</li>
-                        <li class="border-b li-footer-links">Amet consecteur</li>
-                        <li class="border-b li-footer-links">Praesent velsem id</li>
-                        <li class="border-b li-footer-links">Curabitur hendrerit est</li>
-                        <li class="border-b li-footer-links">Aliquam eget eratnnec sapien</li>
-                        <li class="border-b li-footer-links">Cras id augue nunc</li>
-                        <li class="border-b li-footer-links">Sed a nulla urna</li>
+                        <li class="border-b">Lorem ipsum dolor sit</li>
+                        <li class="border-b">Amet consecteur</li>
+                        <li class="border-b">Praesent velsem id</li>
+                        <li class="border-b">Curabitur hendrerit est</li>
+                        <li class="border-b">Aliquam eget eratnnec sapien</li>
+                        <li class="border-b">Cras id augue nunc</li>
+                        <li class="border-b">Sed a nulla urna</li>
 
                     </ul>
                 </div>
-                <div class="col col-footer w-25 responsive-text-contact">
+                <div class="col w-25">
                     <h2 class="f-weight-100 text-color-white">Latest Tweets</h2>
-                    <p class="text-footer">
-                        <span class='text-color-green'>@namehere</span> Justoid nonummy laoreet
-                        phasellent penatoque in
-                        antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus
-                        laoremut vitae doloreet
+                    <p>
+                        <span class='text-color-green'>@namehere</span> Justoid nonummy laoreet phasellent penatoque in
+                        antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet
                         1 day ago
                     </p>
 
-                    <p class="text-footer">
-                        <span class='text-color-green'>@namehere</span> Justoid nonummy laoreet
-                        phasellent penatoque in
-                        antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus
-                        laoremut vitae doloreet
+                    <p>
+                        <span class='text-color-green'>@namehere</span> Justoid nonummy laoreet phasellent penatoque in
+                        antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet
                         1 day ago
                     </p>
                 </div>
-                <div class="col col-footer w-25 responsive-text-contact">
+                <div class="col w-25">
                     <h2 class="f-weight-100 text-color-white">Contact Us</h2>
-                    <form action='traitement.php' id="form1" novalidate method="POST">
-                        <input type="text" placeholder="Full Name" id='name' maxlength='20' required >
-                        <span class="erreur" id='missname'></span><br/>
-                        <input type="email" placeholder="Email Adress" id="email" name="f-addr" required>
-                        <span class="erreur" id ='missemail'></span><br/>
-                        <input type="text" placeholder="Subject" id="subject" name="f-subject" required>
-                        <span class="erreur" id='misssubject'></span><br/>
-                        <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10" required></textarea>
-                        <span class="erreur" id='missmessage'></span><br/>
-                        <button class='btn-green'>SUBMIT</button>  
+                    <form action='' method="POST">
+                        <input type="text" placeholder="Full Name" id='name' name="f-name">
+                        <input type="email" placeholder="Email Adress" id="email" name="f-addr">
+                        <input type="text" placeholder="Subject" id="subject" name="f-subject">
+                        <textarea id="message" name="f-text" placeholder="Message" rows="10" cols="10"></textarea>
+                        <button class='btn-green'>SUBMIT</button>
                     </form>
                 </div>
             </div>
@@ -320,24 +368,51 @@
     <!--footer-->
     <footer class="container-fluid">
         <div class="row">
-            <div class="container d-flex footer-responsive f-justify-content-between">
+            <div class="container d-flex f-justify-content-between">
                 <div class="col">
-                    <p >Copyright &copy; 2013 Domain Name - All Rights Reserved</p>
+                    <p>Copyright &copy; 2013 Domain Name - All Rights Reserved</p>
                 </div>
                 <div class="col">
-                    <p >Template by OS Templates</p>
+                    <p>Template by OS Templates</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/slides.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-   
-    <script src="js/formulaire.js"></script>
-    <script src="js/menu.js"></script>
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
-
-  
