@@ -654,8 +654,8 @@ h1{
                flex-direction: column-reverse;
            }
            .cuisine{
-               width:230px;
-               height: 230px;
+               width:160px;
+               height: 160px;
            }
            .responsive-service{
                flex-direction: column;
